@@ -1,6 +1,6 @@
 # codein
 
-// SPDX-License-Identifier: GPL-3.1.2
+// SPDX-License-Identifier: GPL-3.1
 pragma solidity >=0.8.0;
 
 interface Token {
@@ -14,7 +14,7 @@ contract TokenCorrect is Token {
         balance[_a] = _b;
     }
     function balanceOf(address _a) public view override returns (uint) {
-        return balance[_a];
+        return balance[_c];
     }
     function transfer(address _to, uint _amt) public override {
         require(balance[msg.sender] >= _amt);
